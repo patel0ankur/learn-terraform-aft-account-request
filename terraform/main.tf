@@ -2,16 +2,16 @@ module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "patelax+sandboxaft@amazon.com"
-    AccountName               = "sandboxaft"
+    AccountEmail              = "patelax+sandboxaftvpc@amazon.com"
+    AccountName               = "sandboxaftvpc"
     ManagedOrganizationalUnit = "AFT"
-    SSOUserEmail              = "patelax+sandboxaft@amazon.com"
+    SSOUserEmail              = "patelax+sandboxaftvpc@amazon.com"
     SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "AFT"
+    SSOUserLastName           = "AFTvpc"
   }
 
   account_tags = {
-    "Tutorial" = "AFT"
+    "Tutorial" = "AFTvpc"
   }
 
   change_management_parameters = {
